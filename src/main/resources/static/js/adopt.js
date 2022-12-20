@@ -1,27 +1,29 @@
-const form = document.getElementById('form')
+const form = document.getElementById('button')
 
-form.addEventListener("submit", input =>
+form.addEventListener('click', input =>
 {
-    console.log("adsfladsfjldkaf")
     input.preventDefault()
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const zubr_name = document.getElementById('zubr_name').value;
-    const your_charity = document.getElementById('your_charity').value;
+    const yourCharity = document.getElementById('yourCharity').value;
+    const zubrName = document.getElementById('zubrName').value;
 
-    fetch('registration',
-        {
-            method: 'POST',
-            headers:
-                {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-            body: JSON.stringify({ "name": name, "zubr_name": zubr_name, "your_charity": your_charity, "email": email})
-        }).then(()=>{
-            console.log("fetched")
-    })
+    // const zubrName = document.querySelector("[zubrName]")
 
-    location.href = "adopt.html"
+    if((name!="")&&(email!="")&&(yourCharity!="")&&(zubrName!="")) {
+        console.log(zubrName)
+        fetch('/demo/add',
+            {
+                method: 'POST',
+                headers:
+                    {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName})
+            })
+
+        location.href = "index.html"
+    }
 })

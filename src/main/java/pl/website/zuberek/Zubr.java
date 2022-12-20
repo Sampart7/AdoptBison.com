@@ -6,16 +6,16 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class User {
+public class Zubr {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String name;
     private String email;
 
-    private String zubr_name;
+    private String zubrName;
 
-    private String your_charity;
+    private String yourCharity;
 
     public Integer getId() {
         return id;
@@ -34,18 +34,18 @@ public class User {
     }
 
     public String getZubrName() {
-        return zubr_name;
+        return zubrName;
     }
 
-    public void setZubrName(String zubr_name) {
-        this.zubr_name = zubr_name;
+    public void setZubrName(String zubrName) {
+        this.zubrName = zubrName;
     }
 
     public String getYourCharity() {
-        return your_charity;
+        return yourCharity;
     }
-    public void setYourCharity(String your_charity) {
-        this.your_charity = your_charity;
+    public void setYourCharity(String yourCharity) {
+        this.yourCharity = yourCharity;
     }
 
     public String getEmail() {

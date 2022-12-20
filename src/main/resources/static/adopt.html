@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ZUBEREK.PL</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <template product-template-2>
+        <div class="product">
+            <div class = "zubrName" zubrName></div>
+        </div>
+    </template>
+
+</head>
+
+<body>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-2 px-lg-0 mb-6">
+    <a href="index.html" class="navbar-brand ms-lg-5">
+        <h1 class="m-0 text-uppercase text-dark">ŻUBEREK.PL</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">STRONA GŁÓWNA</a>
+            <a href="" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">ADOPTUJ ŻUBRA<i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Contact Start -->
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+            <h6 class="text-primary text-uppercase">ADOPTUJ ŻUBRA</h6>
+            <h1 class="display-5 text-uppercase mb-0">NIE BĄDŹ MENEL WPŁAĆ NA ŻUBRA</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-light border-0 px-4" id="name" placeholder="Twoje Imie" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control bg-light border-0 px-4" id="email" placeholder="Twój Emaill" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <select id="select" class="form-control bg-light border-0 px-4" class = "products-grid" products-container-2>
+                                <option value="">Nazwa Żubra</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-light border-0 px-4" id="yourCharity" placeholder="Twój Datek" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control bg-light border-0 px-4 py-3" rows="8" placeholder="Opis"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" id="button" type="submit">ADOPTUJ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-light mb-5 p-5">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">nasza lokalizacja</h6>
+                            <span>SBM, Zielona Góra</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">Nasz email</h6>
+                            <span>SexyBoysMasters@roxa.pl</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">Zadzwoń do nas</h6>
+                            <span>694 202 137</span>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class="position-relative w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1229.6861988367605!2d15.53094288953023!3d51.94540023374482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x743058f63db15ad9!2sAkademik%20SBM!5e0!3m2!1spl!2spl!4v1670159606730!5m2!1spl!2spl"
+                                frameborder="0" style="height: 205px; border:0;" allowfullscreen="" aria-hidden="false"
+                                tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-light mt-2 py-2">
+    <div class="container pt-4">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Nasze dane</h5>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>SBM, Zielona Góra</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>SexyBoysMasters@roxa.pl</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>694 202 137</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">OSTATNIO ODWIEDZANE</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>STRONA GŁÓWNA</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>ADOPTUJ ŻUBRA</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">ŚLEDZIK NA RAZ</h5>
+                <div class="d-flex">
+                    <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white-50 py-2">
+    <div class="container">
+        <div class="row g-5">
+            <p class="mb-md-0">&copy; <a class="text-white" href="#">ŻUBEREK.PL</a>. Czuj się jak u siebie.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Template Javascript -->
+<script src="js/adopt.js?v=2"></script>
+<script src = "js/load-to-adopot.js?v=1" defer></script>
+
+<!-- JavaScript Libraries -->
+<script src = "https://code.jquery.com/jquery-1.7.1.min.js" defer></script>
+
+</body>
+</html>
