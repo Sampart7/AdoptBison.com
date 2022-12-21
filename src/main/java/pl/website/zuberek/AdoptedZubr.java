@@ -17,6 +17,8 @@ public class AdoptedZubr {
 
     private String yourCharity;
 
+    private String description;
+
     public Integer getId() {
         return id;
     }
@@ -53,5 +55,13 @@ public class AdoptedZubr {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

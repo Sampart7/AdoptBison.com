@@ -8,6 +8,7 @@ form.addEventListener('click', input =>
     const email = document.getElementById('email').value;
     const yourCharity = document.getElementById('yourCharity').value;
     const zubrName = document.getElementById('zubrName').value;
+    const description = document.getElementById('description').value;
 
     // const zubrName = document.querySelector("[zubrName]")
 
@@ -21,7 +22,7 @@ form.addEventListener('click', input =>
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName})
+                body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description})
             })
 
         location.href = "index.html"
