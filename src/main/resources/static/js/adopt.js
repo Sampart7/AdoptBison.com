@@ -13,7 +13,7 @@ form.addEventListener('click', input =>
 
     if((name!="")&&(email!="")&&(yourCharity!="")&&(zubrName!="")) {
         console.log(zubrName)
-        fetch('/demo/add',
+        fetch('/demo/adopt',
             {
                 method: 'POST',
                 headers:

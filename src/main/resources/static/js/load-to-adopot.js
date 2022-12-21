@@ -1,5 +1,4 @@
 const productTemplate = document.querySelector("[product-template-2]")
-const productsContainer = document.querySelector("[products-container-2]")
 
 fetch("/demo/all")
 .then(res => res.json())
@@ -12,11 +11,7 @@ fetch("/demo/all")
 
         zubrName.textContent = product.zubrName
 
-        productsContainer.append(template)
-
         let ele = document.getElementById('select');
-
-
-        ele.innerHTML = ele.innerHTML + '<option id="zubrName" >' + product.zubrName + '</option>';
+        ele.innerHTML = ele.innerHTML + '<option id="zubrName">' + zubrName.textContent + '</option>';
     })
 })

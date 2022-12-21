@@ -11,13 +11,9 @@ fetch("/demo/all")
     data.forEach(product =>
     {
         const template = productTemplate.content.cloneNode(true).children[0]
-        const name = template.querySelector("[name]")
-        const email = template.querySelector("[email]")
         const yourCharity = template.querySelector("[yourCharity]")
         const zubrName = template.querySelector("[zubrName]")
 
-        name.textContent = product.name
-        email.textContent = product.email
         yourCharity.textContent = product.yourCharity
         zubrName.textContent = product.zubrName
 
