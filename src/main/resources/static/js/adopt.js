@@ -7,7 +7,7 @@ form.addEventListener('click', input =>
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const yourCharity = document.getElementById('yourCharity').value;
-    const zubrName = document.getElementById('zubrName').value;
+    const zubrName = document.getElementById('select').value;
     const description = document.getElementById('description').value;
 
     // const zubrName = document.querySelector("[zubrName]")
