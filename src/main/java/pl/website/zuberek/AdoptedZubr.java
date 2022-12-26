@@ -13,13 +13,13 @@ public class AdoptedZubr {
     private String name;
     private String email;
 
-    private String image;
-
     private String zubrName;
 
     private String yourCharity;
 
     private String description;
+
+    private String image;
 
     public Integer getId() {
         return id;
@@ -37,6 +37,13 @@ public class AdoptedZubr {
         this.name = name;
     }
 
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getZubrName() {
         return zubrName;
     }
@@ -50,13 +57,6 @@ public class AdoptedZubr {
     }
     public void setYourCharity(String yourCharity) {
         this.yourCharity = yourCharity;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getDescription() {

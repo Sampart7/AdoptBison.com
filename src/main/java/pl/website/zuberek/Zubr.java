@@ -39,13 +39,10 @@ public class Zubr {
     public void setYourCharity(String yourCharity) {
         this.yourCharity = yourCharity;
     }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
     public String getImage() {
         return image;
     }
-
+    public void setImage(String image) {
+        this.image = image;
+    }
 }

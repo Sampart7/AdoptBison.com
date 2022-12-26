@@ -8,10 +8,11 @@ image_input.addEventListener("change", function (){
 
         let birds = document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`
         birds.replace("\"", "&quot;")
-        console.log(birds)
 
         birds = '<div id="display_image" style="background-image: ' + birds + ';"></div>'
-        console.log(birds)
+
+        let ele = document.getElementById('image');
+        ele.textContent = ele.textContent + birds
     })
     reader.readAsDataURL(this.files[0])
 })

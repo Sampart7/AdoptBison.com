@@ -11,6 +11,8 @@ form.addEventListener('click', input =>
     const description = document.getElementById('description').value;
     const image = document.getElementById('image_input').value;
 
+    // console.log(image)
+
     if((name!="")&&(email!="")&&(yourCharity!="")&&(zubrName!="")) {
         fetch('/demo/adopt',
             {
@@ -22,7 +24,6 @@ form.addEventListener('click', input =>
                     },
                 body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description, "image": image})
             })
-
-        location.href = "index.html"
+        // location.href = "index.html"
     }
 })

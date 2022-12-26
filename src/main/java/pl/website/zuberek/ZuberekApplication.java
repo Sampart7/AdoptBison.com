@@ -8,5 +8,4 @@ public class ZuberekApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ZuberekApplication.class, args);
 	}
-
 }
