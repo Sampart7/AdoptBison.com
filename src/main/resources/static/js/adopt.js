@@ -9,7 +9,7 @@ form.addEventListener('click', input =>
     const yourCharity = document.getElementById('yourCharity').value;
     const zubrName = document.getElementById('select').value;
     const description = document.getElementById('description').value;
-    const image = document.getElementById('image_input').value;
+    const image = document.getElementById('image').value;
 
     // console.log(image)
 
@@ -24,6 +24,6 @@ form.addEventListener('click', input =>
                     },
                 body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description, "image": image})
             })
-        // location.href = "index.html"
+        location.href = "index.html"
     }
 })

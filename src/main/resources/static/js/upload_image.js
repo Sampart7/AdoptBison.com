@@ -12,7 +12,7 @@ image_input.addEventListener("change", function (){
         birds = '<div id="display_image" style="background-image: ' + birds + ';"></div>'
 
         let ele = document.getElementById('image');
-        ele.textContent = ele.textContent + birds
+        ele.value = ele.textContent + birds
     })
     reader.readAsDataURL(this.files[0])
 })
