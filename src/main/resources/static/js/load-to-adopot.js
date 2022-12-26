@@ -13,6 +13,6 @@ fetch("/demo/all")
         let birds = zubrName.textContent
 
         let ele = document.getElementById('select');
-        ele.inner = ele.innerHTML + '<option id="' + birds + '">' + birds + '</option>';
+        ele.innerHTML = ele.innerHTML + '<option id="' + birds + '">' + birds + '</option>';
     })
 })

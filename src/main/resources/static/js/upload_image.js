@@ -6,17 +6,13 @@ image_input.addEventListener("change", function (){
     reader.addEventListener("load", () => {
         uploaded_image = reader.result
         document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`
+
+        let birds = document.querySelector("#display_image").style.backgroundImage
+        birds = birds.replace(' " ', "&quot;")
+        console.log(birds)
+
+        birds = '<div id="display_image" style="background-image: ' + birds + ';"></div>'
+        console.log(birds)
     })
     reader.readAsDataURL(this.files[0])
 })
-
-// const imageUrl = "C:/Users/Michał Janaszek/Desktop";
-//
-// fetch(imageUrl)
-//     //
-//     .then(response => response.blob())
-//     .then(imageBlob => {
-//         // Then create a local URL for that image and print it
-//         const imageObjectURL = URL.createObjectURL(imageBlob);
-//         console.log(imageObjectURL);
-//     });

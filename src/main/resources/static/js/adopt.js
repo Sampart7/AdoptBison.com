@@ -9,11 +9,9 @@ form.addEventListener('click', input =>
     const yourCharity = document.getElementById('yourCharity').value;
     const zubrName = document.getElementById('select').value;
     const description = document.getElementById('description').value;
-
-    // const zubrName = document.querySelector("[zubrName]")
+    const image = document.getElementById('image_input').value;
 
     if((name!="")&&(email!="")&&(yourCharity!="")&&(zubrName!="")) {
-        console.log(zubrName)
         fetch('/demo/adopt',
             {
                 method: 'POST',
@@ -22,7 +20,7 @@ form.addEventListener('click', input =>
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     },
-                body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description})
+                body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description, "image": image})
             })
 
         location.href = "index.html"
