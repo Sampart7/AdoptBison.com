@@ -13,7 +13,7 @@ fetch("/demo/adopted")
             const yourCharity = template.querySelector("[yourCharity]")
             const zubrName = template.querySelector("[zubrName]")
             const description = template.querySelector("[description]")
-
+            const image = template.querySelector("[image]")
 
             name.textContent = product.name
             email.textContent = product.email
@@ -21,7 +21,8 @@ fetch("/demo/adopted")
             zubrName.textContent = product.zubrName
             description.textContent = product.description
 
-            productsContainer3.append(template)
+            image.innerHTML = product.image
 
+            productsContainer3.append(template)
         })
     })

@@ -10,11 +10,13 @@ fetch("/demo/all")
             const template = productTemplate.content.cloneNode(true).children[0]
             const yourCharity = template.querySelector("[yourCharity]")
             const zubrName = template.querySelector("[zubrName]")
+            const image = template.querySelector("[image]")
 
             yourCharity.textContent = product.yourCharity
             zubrName.textContent = product.zubrName
 
-            productsContainer.append(template)
+            image.innerHTML = product.image
 
+            productsContainer.append(template)
         })
     })

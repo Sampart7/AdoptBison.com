@@ -15,6 +15,8 @@ public class Zubr {
 
     private String yourCharity;
 
+    private String image;
+
     public Integer getId() {
         return id;
     }
@@ -36,6 +38,14 @@ public class Zubr {
     }
     public void setYourCharity(String yourCharity) {
         this.yourCharity = yourCharity;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
     }
 
 }

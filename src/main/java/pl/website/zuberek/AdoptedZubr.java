@@ -13,6 +13,8 @@ public class AdoptedZubr {
     private String name;
     private String email;
 
+    private String image;
+
     private String zubrName;
 
     private String yourCharity;
@@ -63,5 +65,13 @@ public class AdoptedZubr {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
     }
 }
