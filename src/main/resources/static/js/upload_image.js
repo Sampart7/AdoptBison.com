@@ -5,10 +5,9 @@ image_input.addEventListener("change", function (){
     const reader = new FileReader()
     reader.addEventListener("load", () => {
         uploaded_image = reader.result
-        document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`
 
-        let birds = document.querySelector("#display_image").style.backgroundImage
-        birds = birds.replace(' " ', "&quot;")
+        let birds = document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`
+        birds.replace("\"", "&quot;")
         console.log(birds)
 
         birds = '<div id="display_image" style="background-image: ' + birds + ';"></div>'
