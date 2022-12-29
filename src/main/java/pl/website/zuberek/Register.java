@@ -18,6 +18,8 @@ public class Register {
 
     private String repassword;
 
+    private boolean enabled = false;
+
     public Integer getId() {
         return id;
     }
@@ -46,5 +48,13 @@ public class Register {
 
     public void setRepassword(String repassword) {
         this.repassword = repassword;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }
