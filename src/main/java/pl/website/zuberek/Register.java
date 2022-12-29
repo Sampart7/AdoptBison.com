@@ -1,4 +1,4 @@
-package registerlogin;
+package pl.website.zuberek;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,11 +10,21 @@ public class Register {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
 
+    private Integer id;
+
     private String email;
 
     private String password;
 
     private String repassword;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getEmail() {
         return email;

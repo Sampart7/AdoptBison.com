@@ -1,4 +1,4 @@
-package registerlogin;
+package pl.website.zuberek;
 
 import org.springframework.data.repository.CrudRepository;
 

@@ -11,7 +11,7 @@ form.addEventListener('click', input =>
 
     if((email!="")&&(password!="")&&(repassword!="")) {
         if(password == repassword) {
-            fetch('/user/add',
+            fetch('/demo/addUser',
                 {
                     method: 'POST',
                     headers:
@@ -21,7 +21,7 @@ form.addEventListener('click', input =>
                         },
                     body: JSON.stringify({"email": email, "password": password, "repassword": repassword})
                 })
-            // location.href = "index.html"
+            location.href = "login.html"
         }
     }
 })
