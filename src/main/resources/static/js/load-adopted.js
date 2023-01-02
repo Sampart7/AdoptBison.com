@@ -17,7 +17,7 @@ fetch("/demo/adopted")
 
             name.textContent = product.name
             email.textContent = product.email
-            yourCharity.textContent = product.yourCharity
+            yourCharity.textContent = product.yourCharity + "zł"
             zubrName.textContent = product.zubrName
             description.textContent = product.description
 
