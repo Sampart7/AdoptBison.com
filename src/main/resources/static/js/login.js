@@ -21,7 +21,7 @@ form.addEventListener('click', input =>
                         {
                             if(JSON.parse(isValid))
                             {
-                                location.href = "index.html"
+                                location.href = "main.html"
                             }
                         })
                 }

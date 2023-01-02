@@ -24,6 +24,6 @@ form.addEventListener('click', input =>
                     },
                 body: JSON.stringify({"name": name, "email": email, "yourCharity": yourCharity, "zubrName": zubrName, "description": description, "image": image})
             })
-        location.href = "index.html"
+        location.href = "main.html"
     }
 })

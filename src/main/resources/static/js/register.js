@@ -21,7 +21,7 @@ form.addEventListener('click', input =>
                         },
                     body: JSON.stringify({"email": email, "password": password, "repassword": repassword})
                 })
-            location.href = "login.html"
+            location.href = "index.html"
         }
     }
 })
