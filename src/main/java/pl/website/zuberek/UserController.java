@@ -14,6 +14,9 @@ public class UserController {
     @Autowired
     private EmailService emailService;
 
+    @Autowired
+    private UserService userService;
+
     @PostMapping(path="/addUser")
     public @ResponseBody String addNewUser(@RequestBody Register newUser) {
         userRepository.save(newUser);
@@ -40,4 +43,17 @@ public class UserController {
     public @ResponseBody Iterable<Register> getAllUsers() {
         return userRepository.findAll();
     }
+
+    @GetMapping(path = "/getByEmail")
+    public Register getByEmail(@RequestParam("email") String email)
+    {
+        return userService.getByEmail(email);
+    }
+
+    @GetMapping(path = "/compare")
+    public boolean compare(@RequestParam("email") String email, @RequestParam("password") String password)
+    {
+        return userService.compare(email, password);
+    }
+
 }
