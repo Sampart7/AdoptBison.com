@@ -12,7 +12,7 @@ public class Token {
 
     private String token;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     private Register user;
 
     public Token() {

@@ -3,8 +3,10 @@ package pl.website.zuberek;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 @AllArgsConstructor
@@ -28,8 +30,6 @@ public class UserService {
         {
             throw new IllegalStateException("user not found");
         }
-
-        String hashedPassword = user.get().getPassword();
 
         return Objects.equals(user.get().getPassword(), password);
     }
