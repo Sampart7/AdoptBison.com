@@ -36,7 +36,6 @@
         </div>
     </template>
 </head>
-
 <body>
 <!-- Navbar Start-->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-2 px-lg-0 mb-6">
@@ -47,12 +46,18 @@
         <div class="navbar-nav ms-auto py-0">
             <a href="main.html" class="nav-item nav-link active">STRONA GŁÓWNA</a>
             <a href="main.html" class="nav-item nav-link">🌙</a>
-            <a href="france.html" class="nav-item nav-link">🏳️‍🌈</a>
+            <a onclick="myFunction()" class="nav-item nav-link" style="cursor: pointer;">🌈</a>
             <a href="adopt.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">ADOPTUJ ŻUBRA<i class="bi bi-arrow-right"></i></a>
         </div>
     </div>
 </nav>
 <!-- Navbar End-->
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 
 <!-- HEADER -->
 <div class="container-fluid bg-primary py-5 mb-5 hero-header">
