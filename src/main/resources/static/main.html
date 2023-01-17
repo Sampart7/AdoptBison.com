@@ -14,8 +14,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=0" rel="stylesheet">
-    <link href="css/products.css?v=0" rel="stylesheet">
+    <link href="css/style.css?v=1" rel="stylesheet">
+    <link href="css/products.css?v=1" rel="stylesheet">
 
     <template product-template>
         <div class="product">
@@ -45,19 +45,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="main.html" class="nav-item nav-link active">STRONA GŁÓWNA</a>
-            <a href="main.html" class="nav-item nav-link">🌙</a>
-            <a onclick="myFunction()" class="nav-item nav-link" style="cursor: pointer;">🌈</a>
+            <a onclick="myFunction()" class="nav-item nav-link" style="cursor: pointer;">🌙</a>
+            <a href="france.html" class="nav-item nav-link">🇫🇷</a>
             <a href="adopt.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">ADOPTUJ ŻUBRA<i class="bi bi-arrow-right"></i></a>
         </div>
     </div>
 </nav>
 <!-- Navbar End-->
-<script>
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-</script>
 
 <!-- HEADER -->
 <div class="container-fluid bg-primary py-5 mb-5 hero-header">
@@ -186,6 +180,7 @@
 <!-- Template Javascript -->
 <script src="js/load-products.js?v=0" defer></script>
 <script src="js/load-adopted.js?v=0" defer></script>
+<script src="js/dark-mode.js?v=0" defer></script>
 </body>
 
 </html>

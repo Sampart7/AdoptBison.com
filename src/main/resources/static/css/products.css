@@ -55,6 +55,7 @@
 }
 .email {
   background-color: #BEBCBC66;
+  color: #7ab730;
   font-size: 12px;
   grid-row-start: 2;
   grid-column-start: 5;
@@ -63,6 +64,7 @@
 }
 .name{
   background-color: #BEBCBC66;
+  color: #7ab730;
   text-align: left;
   font-size: 16px;
   grid-row-start: 3;
@@ -72,6 +74,7 @@
 }
 .yourCharity{
   background-color: #BEBCBC66;
+  color: #7ab730;
   text-align: right;
   font-size: 16px;
   grid-row-start: 3;
