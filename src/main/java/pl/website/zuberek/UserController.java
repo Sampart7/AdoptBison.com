@@ -21,6 +21,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * @param newUser
+     * @return
+     * we check if the user exists
+     * if so, we check if it is available
+     * if it is not available, we create and send it a randomly generated token
+     */
     @PostMapping(path="/addUser")
     public @ResponseBody String addNewUser(@RequestBody Register newUser) {
         Optional<Register> foundUser = userRepository.findByEmail(newUser.getEmail());
@@ -52,6 +59,12 @@ public class UserController {
         }
     }
 
+    /**
+     * @param token
+     * @return
+     *
+     * If the user enters the link sent to the e-mail, we change the user's value to enable
+     */
     @GetMapping(path="/confirm")
     public String confirm(@RequestParam("token") String token) {
         Token t2 = tokenRepository.GetTokenByString(token);
@@ -59,21 +72,41 @@ public class UserController {
         return "confirmed";
     }
 
+    /**
+     * @param link
+     * @return
+     * we return a confirmed email
+     */
     public String emailConfirm(String link){
         return link;
     }
 
+    /**
+     * @return
+     * displaying all users
+     */
     @GetMapping(path="/allUsers")
     public @ResponseBody Iterable<Register> getAllUsers() {
         return userRepository.findAll();
     }
 
+    /**
+     * @param email
+     * @return
+     * displaying all emails
+     */
     @GetMapping(path = "/getByEmail")
     public Register getByEmail(@RequestParam("email") String email)
     {
         return userService.getByEmail(email);
     }
 
+    /**
+     * @param email
+     * @param password
+     * @return
+     * we check if the e-mail address and password match
+     */
     @GetMapping(path = "/compare")
     public boolean compare(@RequestParam("email") String email, @RequestParam("password") String password)
     {
